@@ -1,0 +1,64 @@
+
+.home-container {
+ /* background-color: #ffffff;  Choose a background color */
+  padding: 20px;
+  background: linear-gradient(to right, #f6c06e, #9c9a96);
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+
+.video-block {
+    display: block;
+    margin-bottom: 10px;
+    width: 400px; 
+    height: 280px;
+    background-color: black; /* Add black background */
+    padding: 10px; /* Add padding around the video */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+
+.video-block h3 {
+    margin-bottom: 10px; /* Adjust title margin as needed */
+    color: white; /* Change text color to white */
+  }
+  .video-block video {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Add border radius to the video */
+  }
+
+  /* .purple-paradise {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+  } */
+
+  @media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-block {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+.video-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.video-block {
+  width: 100%;
+  height: auto;
+}
+}
