@@ -1,6 +1,6 @@
 //import ucfImage from './UCFlogo.webp';
 import React from 'react';
-import { HashRouter,BrowserRouter, Route, Routes,Link } from 'react-router-dom';
+import { Router, Route, Routes,Link } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
 import NavigationBar from './NavigationBar';
@@ -13,7 +13,7 @@ import  Main from './components/Main';
 function App() {
   return (
     <Container>
-    <BrowserRouter basename='/ULTRA_APP'>
+    <Router basename='/ULTRA_APP'>
     <div className="App">
     
       <header className="App-header">
@@ -38,7 +38,7 @@ function App() {
       </Routes>
       </div>
       
-    </BrowserRouter>
+    </Router>
     </Container>
 
           
