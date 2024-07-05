@@ -13,7 +13,7 @@ import  Main from './components/Main';
 function App() {
   return (
     <Container>
-    <BrowserRouter>
+    <BrowserRouter basename='/ULTRA_APP'>
     <div className="App">
     
       <header className="App-header">
