@@ -28,7 +28,7 @@ function App() {
       
       <Routes>
         {/* <Route exact path="/main" element={<Main />} /> */}
-        <Route path="/" element={<Main />} /> 
+        // <Route path="/" element={<Main />} /> 
         <Route path="/ULTRA_APP" element={<Main />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
