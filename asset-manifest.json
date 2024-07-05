@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ULTRA_APP/static/css/main.2865f515.css",
-    "main.js": "/ULTRA_APP/static/js/main.68c434a6.js",
+    "main.js": "/ULTRA_APP/static/js/main.04c3964e.js",
     "static/js/453.ee4382cc.chunk.js": "/ULTRA_APP/static/js/453.ee4382cc.chunk.js",
     "static/media/pneumonia.mp4": "/ULTRA_APP/static/media/pneumonia.d08650f6c6f9282650c4.mp4",
     "static/media/nerve.mp4": "/ULTRA_APP/static/media/nerve.f932f4ff56c9332a1aa8.mp4",
@@ -11,11 +11,11 @@
     "static/media/UCFlogo.webp": "/ULTRA_APP/static/media/UCFlogo.e024b64f98395bcefdc1.webp",
     "index.html": "/ULTRA_APP/index.html",
     "main.2865f515.css.map": "/ULTRA_APP/static/css/main.2865f515.css.map",
-    "main.68c434a6.js.map": "/ULTRA_APP/static/js/main.68c434a6.js.map",
+    "main.04c3964e.js.map": "/ULTRA_APP/static/js/main.04c3964e.js.map",
     "453.ee4382cc.chunk.js.map": "/ULTRA_APP/static/js/453.ee4382cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2865f515.css",
-    "static/js/main.68c434a6.js"
+    "static/js/main.04c3964e.js"
   ]
 }
