@@ -21,7 +21,7 @@ function App() {
       {/* <div className="top-left-container">
         <img src={ucfImage} className="App-logo" alt="UCF" />
         </div>        */}
-        <Link to="/ULTRA_APP" className="App-link"><h2> ← Return to Main page</h2></Link>
+        <Link to="/ULTRA_APP/" className="App-link"><h2> ← Return to Main page</h2></Link>
         </header>
       
       <NavigationBar />
@@ -30,7 +30,7 @@ function App() {
         {/* <Route exact path="/main" element={<Main />} /> */}
         <Route path="/" element={<Main />} /> 
 
-        <Route path="/ULTRA_APP" element={<Main />} />
+        <Route path="/ULTRA_APP/" element={<Main />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
