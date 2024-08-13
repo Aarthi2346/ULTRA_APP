@@ -1,19 +1,19 @@
 //import ucfImage from './UCFlogo.webp';
 import React from 'react';
-import { BrowserRouter, Route, Routes,Link } from 'react-router-dom';
+import { HashRouter, Route, Routes,Link } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
 import NavigationBar from './NavigationBar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import  Main from './components/Main';
+import Videos from './components/Videos';
 
 
 function App() {
   return (
     <Container>
-    <BrowserRouter basename='/ULTRA_APP'>
+    <HashRouter basename='' >
     <div className="App">
     
       <header className="App-header">
@@ -21,24 +21,24 @@ function App() {
       {/* <div className="top-left-container">
         <img src={ucfImage} className="App-logo" alt="UCF" />
         </div>        */}
-        <Link to="/ULTRA_APP" className="App-link"><h2> ← Return to Main page</h2></Link>
+        <Link to="/" className="App-link"><h2> ← Return to Main page</h2></Link>
         </header>
       
       <NavigationBar />
       
       <Routes>
         {/* <Route exact path="/main" element={<Main />} /> */}
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
 
-        <Route path="/ULTRA_APP" element={<Main />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/videos" element={<Videos />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
        
       </Routes>
       </div>
       
-    </BrowserRouter>
+    </HashRouter>
     </Container>
 
           

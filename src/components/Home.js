@@ -1,70 +1,20 @@
 import React from 'react';
+// import doctorImage from '../doctor.jpeg';
+import { Link } from 'react-router-dom';
 import './Home.css';
-import lpe from '../Videos/lung_pulmonary_edema.mp4';
-import nerve from '../Videos/nerve.mp4';
-import pneumonia from '../Videos/pneumonia.mp4';
-import tendon from '../Videos/tendon.mp4';
 
-const VideoPlayer = () => {
-  const [playing, setPlaying] = React.useState(false);
-
-  const togglePlay = () => {
-    setPlaying(!playing);
-  };
-
+function home() {
   return (
-    
-   
-      <div className='video-container'>
+    <div class="content">
       <div>
-        <video 
-        src={lpe}
-        controls
-        onClick={togglePlay}
-        className="video-block"
-        
-      />
-      <h3>lung_pulmonary_edema</h3>
-      </div>
-      <div>
-      <video 
-        src={nerve}
-        controls
-        onClick={togglePlay}
-        className="video-block"
-      />
-      <h3>nerve</h3>
-      </div>
-      <div>
-      <video 
-        src={pneumonia}
-        controls
-        onClick={togglePlay}
-        className="video-block"
-      />
-      <h3>pneumonia</h3>
-      </div>
-      <div>
-      <video 
-        src={tendon}
-        controls
-        onClick={togglePlay}
-        className="video-block"
-      />
-      <h3>tendon</h3>
-      </div>
-      </div>
-   
-  );
-};
-
-const Home = () => {
-  return (
-    <div className="home-container">
-      <VideoPlayer />
+    {/* <img src={doctorImage} alt="Doctor" className='docimg'/>  */}
+    <h1 className="main-text">Ultra App</h1>
+    <Link to="/home" className="explore-button">Explore Videos</Link> &nbsp;
+    <p className="description-text">A sophisticated platform designed to visualize and interact with ultrasound videos. </p>
+    </div>  
     </div>
-  );
-};
+    
+  )
+}
 
-export default Home;
-
+export default home
